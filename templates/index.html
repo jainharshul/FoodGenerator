@@ -1,0 +1,20 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe Finder</title>
+  </head>
+  <body>
+    <h1>Recipe Finder</h1>
+    {% if error %}
+    <div style="color: red">{{ error }}</div>
+    {% endif %}
+    <form method="post" action="/">
+      <label for="ingredients"
+        >Enter at least 8 ingredients you have, separated by commas:</label
+      >
+      <input type="text" id="ingredients" name="ingredients" required />
+      <button type="submit">Find Recipes</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!-- templates/results.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe Results</title>
+  </head>
+  <body>
+    <h1>Recipes Based on Your Ingredients</h1>
+    {% if recipes %}
+    <ul>
+      {% for idx, title, matches in recipes %}
+      <li>
+        <a href="{{ url_for('recipe_detail', recipe_id=idx) }}">{{ title }}</a>
+        - Matches: {{ matches }}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>No recipes found with the given ingredients. Please try again.</p>
+    {% endif %}
+    <a href="/">Back to Search</a>
+  </body>
+</html>
