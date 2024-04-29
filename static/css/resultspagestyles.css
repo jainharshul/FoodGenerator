@@ -1,0 +1,19 @@
+body {
+    background-image: url('background3.jpg'); /* Replace 'background.jpg' with your image file path */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-attachment: fixed; /* Keep the background image fixed while scrolling */
+    background-size: cover; /* Cover the entire background */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Font family for text */
+    color: white; /* Text color */
+    font-size: 16px; /* Base font size */
+    /* Additional styles as needed */
+}
+h1 {
+    color: white;
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+a {
+    font-size: 32px
+}
