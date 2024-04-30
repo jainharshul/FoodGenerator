@@ -10,17 +10,22 @@
     <title>Recipe Finder</title>
   </head>
   <body>
-    <h1>Welcome to SousChef!</h1>
-    <h2>Find delicious recipes with ingredients you already have!</h2>
-    {% if error %}
-    <div style="color: red">{{ error }}</div>
-    {% endif %}
-    <form method="post" action="/">
-      <label for="ingredients"
-        >Enter at least 8 ingredients you have, separated by commas:</label
-      >
-      <input type="text" id="ingredients" name="ingredients" required />
-      <button type="submit">Find Recipes</button>
-    </form>
+    <div class="content">
+      <img class="rat" src="static/remi.png" alt="rat">
+      <h1>Welcome to SousChef!</h1>
+      <h2>Find delicious recipes with ingredients you already have!</h2>
+      {% if error %}
+      <div style="color: red">{{ error }}</div>
+      {% endif %}
+      <form method="post" action="/">
+        <label for="ingredients">
+          Enter at least 8 ingredients you have, separated by commas:
+          </label>
+        <div class="send">
+          <input type="text" id="ingredients" name="ingredients" required />
+          <button type="submit">Find Recipes</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

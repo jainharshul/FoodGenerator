@@ -1,19 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700');
+* {
+    font-family: 'Poppins', 'Verdana', 'Helvetica', sans-serif;
+    font-weight: 400;
+}
+
 body {
-    background-image: url('background3.jpg'); /* Replace 'background.jpg' with your image file path */
-    background-repeat: no-repeat; /* Prevent background image from repeating */
-    background-attachment: fixed; /* Keep the background image fixed while scrolling */
-    background-size: cover; /* Cover the entire background */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Font family for text */
-    color: white; /* Text color */
-    font-size: 16px; /* Base font size */
-    /* Additional styles as needed */
+    color: #dddddd;
+    background-color: #101d3c;
 }
-h1 {
-    color: white;
-    font-size: 70px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
-}
+
 a {
-    font-size: 32px
+    font-size: 28px;
+    text-decoration: none;
+    color: #dddddd;
+}
+
+h1 {
+    margin: 1em;
+    font-weight: 600;
+    font-size: 34px;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover {
+    color: grey;
 }
