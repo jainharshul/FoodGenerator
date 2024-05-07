@@ -1,35 +1,51 @@
-# Recipe Finder
+##Sous Chef
+Sous Chef is a Flask-based web application designed to help users find recipes based on the ingredients they have available. The application uses fuzzy string matching to suggest recipes that closely match the user's ingredients, providing a convenient solution for meal planning.
 
-This repository contains a Python script that helps you find recipes based on a given set of ingredients. It uses a CSV dataset of recipes and allows users to input ingredients to search for matching recipes. Once the recipes are found, the script displays the titles and instructions for the matching recipes, allowing the user to choose a recipe to follow.
+Features
+Ingredient-Based Recipe Search: Input a list of ingredients you have, and the app will suggest recipes you can make.
+Fuzzy Matching: The app uses FuzzyWuzzy to match ingredients, allowing for slight spelling errors or variations.
+Recipe Details: View detailed instructions and ingredient lists for each recipe.
+User-Friendly Interface: Simple and intuitive web interface for easy navigation.
+Installation
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/yourusername/sous-chef.git
+Navigate to the project directory:
+bash
+Copy code
+cd sous-chef
+Install dependencies:
+Copy code
+pip install -r requirements.txt
+Prepare the data:
+Ensure your recipe data is available in csv_file/data.csv.
+Run the application:
+Copy code
+python app.py
+Access the application:
+Open your web browser and go to http://127.0.0.1:5000/.
+Usage
+Go to the homepage: The default route is /.
+Enter ingredients: Input a comma-separated list of ingredients in the search box.
+View results: See a list of recipes that match your ingredients.
+View recipe details: Click on a recipe title to view detailed instructions and ingredient lists.
+Files
+app.py: The main Flask application.
+templates/: Directory containing HTML templates.
+csv_file/data.csv: The CSV file containing recipe data.
+requirements.txt: List of Python dependencies.
+Technologies
+Programming Language: Python
+Framework: Flask
+Libraries:
+pandas
+FuzzyWuzzy
+re (Regular Expressions)
+Evaluation
+The application has been tested with various ingredient sets to ensure accurate and relevant recipe suggestions. User feedback has been positive, highlighting the convenience and accuracy of the application.
 
-## Requirements
-
-- Python 3.x
-- Pandas library
-
-## Installation
-
-1. Clone the repository to your local machine or download the script directly.
-2. Ensure that you have Python 3.x installed on your system.
-3. Install the required dependencies by running the following command:
-
-
-## Usage
-
-1. Open a terminal or command prompt and navigate to the directory containing the script.
-2. Run the script using the following command:
-
-python recipe_finder.py
-
-
-3. The script will load the dataset and prompt you to enter ingredients. Provide a comma-separated list of ingredients and press Enter.
-4. The script will search for recipes containing the given ingredients and display the titles of the matching recipes.
-5. Choose a recipe by entering its corresponding number and pressing Enter.
-6. The script will display the instructions for the chosen recipe.
-
-**Note:** Please make sure to update the path to the CSV dataset in the script before running it. Modify the line:
-
-```python
-df = pd.read_csv('/Users/harshuljain/Desktop/dataset/full_dataset.csv')
-
-Replace /Users/harshuljain/Desktop/dataset/full_dataset.csv with the path to your own dataset file.
+Future Enhancements
+User Accounts: Implement personalized recipe suggestions based on user preferences.
+Enhanced Matching: Improve the ingredient matching algorithm for even better suggestions.
+Mobile Application: Develop a mobile app for better accessibility.
