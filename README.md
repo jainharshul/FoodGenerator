@@ -8,43 +8,40 @@ Sous Chef is a Flask-based web application designed to help users find recipes b
 4. User-Friendly Interface: Simple and intuitive web interface for easy navigation.
 
 ## Installation
-Clone the repository:
-``` git clone https://github.com/yourusername/sous-chef.git ```
-Navigate to the project directory:
-bash
-Copy code
-cd sous-chef
-Install dependencies:
-Copy code
-pip install -r requirements.txt
-Prepare the data:
-Ensure your recipe data is available in csv_file/data.csv.
-Run the application:
-Copy code
-python app.py
-Access the application:
-Open your web browser and go to http://127.0.0.1:5000/.
-Usage
-Go to the homepage: The default route is /.
-Enter ingredients: Input a comma-separated list of ingredients in the search box.
-View results: See a list of recipes that match your ingredients.
-View recipe details: Click on a recipe title to view detailed instructions and ingredient lists.
-Files
-app.py: The main Flask application.
-templates/: Directory containing HTML templates.
-csv_file/data.csv: The CSV file containing recipe data.
-requirements.txt: List of Python dependencies.
-Technologies
-Programming Language: Python
-Framework: Flask
-Libraries:
-pandas
-FuzzyWuzzy
-re (Regular Expressions)
-Evaluation
-The application has been tested with various ingredient sets to ensure accurate and relevant recipe suggestions. User feedback has been positive, highlighting the convenience and accuracy of the application.
+1. Clone the repository:
+- ``` git clone https://github.com/yourusername/sous-chef.git ```
+2. Navigate to the project directory:
+- ```cd sous-chef```
+3. Install dependencies:
+- ```pip install -r requirements.tx```
+4. Run the application:
+- ```python app.py```
+5. Access the application:
+- Open your web browser and go to http://127.0.0.1:5000/.
 
-Future Enhancements
-User Accounts: Implement personalized recipe suggestions based on user preferences.
-Enhanced Matching: Improve the ingredient matching algorithm for even better suggestions.
-Mobile Application: Develop a mobile app for better accessibility.
+## Usage
+1. Enter ingredients: Input a comma-separated list of ingredients in the search box.
+2. View results: See a list of recipes that match your ingredients.
+3. View recipe details: Click on a recipe title to view detailed instructions and ingredient lists.
+
+## Files
+1. app.py: The main Flask application.
+2. templates/: Directory containing HTML templates.
+3. csv_file/data.csv: The CSV file containing recipe data.
+4. requirements.txt: List of Python dependencies.
+
+## Technologies
+1. Programming Language: Python
+2. Framework: Flask
+3. Libraries:
+ - pandas
+ - FuzzyWuzzy
+ - re (Regular Expressions)
+ - 
+## Evaluation
+The application has been tested with various ingredient sets to ensure accurate and relevant recipe suggestions.
+
+## Future Enhancements
+- User Accounts: Implement personalized recipe suggestions based on user preferences.
+- Enhanced Matching: Improve the ingredient matching algorithm for even better suggestions.
+- Mobile Application: Develop a mobile app for better accessibility.
