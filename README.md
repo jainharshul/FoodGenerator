@@ -1,16 +1,15 @@
 ## Sous Chef
 Sous Chef is a Flask-based web application designed to help users find recipes based on the ingredients they have available. The application uses fuzzy string matching to suggest recipes that closely match the user's ingredients, providing a convenient solution for meal planning.
 
-Features
-Ingredient-Based Recipe Search: Input a list of ingredients you have, and the app will suggest recipes you can make.
-Fuzzy Matching: The app uses FuzzyWuzzy to match ingredients, allowing for slight spelling errors or variations.
-Recipe Details: View detailed instructions and ingredient lists for each recipe.
-User-Friendly Interface: Simple and intuitive web interface for easy navigation.
-Installation
+## Features
+1. Ingredient-Based Recipe Search: Input a list of ingredients you have, and the app will suggest recipes you can make.
+2. Fuzzy Matching: The app uses FuzzyWuzzy to match ingredients, allowing for slight spelling errors or variations.
+3. Recipe Details: View detailed instructions and ingredient lists for each recipe.
+4. User-Friendly Interface: Simple and intuitive web interface for easy navigation.
+
+## Installation
 Clone the repository:
-bash
-Copy code
-git clone https://github.com/yourusername/sous-chef.git
+``` git clone https://github.com/yourusername/sous-chef.git ```
 Navigate to the project directory:
 bash
 Copy code
