@@ -1,4 +1,4 @@
-##Sous Chef
+## Sous Chef
 Sous Chef is a Flask-based web application designed to help users find recipes based on the ingredients they have available. The application uses fuzzy string matching to suggest recipes that closely match the user's ingredients, providing a convenient solution for meal planning.
 
 Features
